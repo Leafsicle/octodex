@@ -1,9 +1,52 @@
 html {
   height: 100%;
 }
-
 body {
   margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
   min-height: 100%;
   font: 16px / 1 sans-serif;
+}
+header {
+  display: flex;
+  background-color: #f3f3f3;
+}
+header div {
+  border: 5px solid black;
+  flex: 1;
+}
+header nav {
+  border: 5px solid black;
+  flex: 1;
+  text-align: end;
+}
+section.box3 {
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid fuchsia;
+  justify-content: center;
+}
+ul {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+}
+li {
+  list-style: none;
+  padding: 2rem;
+  margin: 3rem;
+  border: 3px solid lawngreen;
+}
+@media (max-width: 500px){
+header div {
+  display: block;
+}
+header nav {
+  display: block;
+}
+section {
+  background-color: red;
+  margin: 5px;
 }
