@@ -32,21 +32,39 @@ ul {
   display: flex;
   flex-flow: wrap row;
   justify-content: center;
-}
+} //
 li {
   list-style: none;
   padding: 2rem;
   margin: 3rem;
-  border: 3px solid lawngreen;
+  border: 2px solid #f3f3f3;
 }
-@media (max-width: 500px){
-header div {
-  display: block;
+.octocat li {
+  width: 424px;
+  height: 424px;
 }
-header nav {
-  display: block;
+footer {
+  display: flex;
 }
-section {
-  background-color: red;
-  margin: 5px;
+nav.box4 {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+@media (max-width: 500px) {
+  section {
+    //background-color: red;
+    margin: 5px;
+  }
+  header {
+    flex-direction: column;
+  }
+  div.box1 {
+    display: flex;
+    justify-content: center;
+  }
+  nav.box2 {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
