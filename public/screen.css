@@ -16,6 +16,10 @@ a {
 a:visited {
   text-direction: none;
 }
+.octocat img{
+  max-width: 100%;
+  height: auto;
+}
 header {
   display: flex;
   background-color: #f3f3f3;
@@ -27,28 +31,21 @@ header div {
 }
 header nav {
   flex: 1;
-  word-wrap: unset
-  
-}
+  flex-wrap: nowrap;
+  }
 section.box3 {
   display: flex;
   flex-wrap: wrap;
-  border: 3px solid fuchsia;
-  justify-content: center;
-}
-ul.octocat {
-  display: flex;
-  flex-flow: wrap row;
   justify-content: center;
 }
 ul.box2 {
   display: flex;
   flex: 1;
   margin-top: -20px;
-  justify-content: right;
-  align-items: baseline;
+  justify-content: flex-end;
   flex-wrap: nowrap;
 }
+
 li {
   list-style: none;
   padding: 0.5rem;
@@ -64,11 +61,17 @@ li {
   color: black;
   font-weight: bold;
   list-style: none;
+  display: inline-block;
 }
 .octocat li {
   width: 424px;
   height: 424px;
   padding: 10px;
+}
+ul.octocat {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
 }
 footer {
   display: flex;
@@ -79,7 +82,7 @@ nav.box4 {
   flex-wrap: nowrap;
 }
 @media (max-width: 500px) {
-  section.box3 {
+  section {
     background-color: red;
     padding: none;
     margin: none;
@@ -92,19 +95,22 @@ nav.box4 {
   }
   header {
     flex-direction: column;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
   }
   div.box1 {
     display: flex;
     flex:1;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin: 
   }
   nav.box2 {
-    //display: inline-flex;
+    display: flex;
     justify-content: space-evenly;
+    align-content: center;
     padding-top: 0.75rem;
-  }
+    border-top: 1px solid #cacaca;
+    }
   .box2 ul{
   padding: none;
   margin: none;
@@ -115,5 +121,10 @@ nav.box4 {
     width: 100%;
     height auto;
     margin; none  
+  }
+ .octocat img{
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
   }
 }
